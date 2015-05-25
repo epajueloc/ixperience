@@ -20,11 +20,12 @@ class Fish
   # If the fish's speed is greater than 20, return "This fish swims super fast!"
   # Otherwise, return This fish is kinda slow."
   def gets_speed
-    if speed > 20
+    if @speed > 20
       puts "This fish swims super fast!"
     else
       puts "This fish is kinda slow."
     end
+  end
 
 end
 
@@ -35,7 +36,7 @@ class Shark <  Fish
   # STEP 5: Define a method called eat that takes an argument called fish.
   # In the method, append the new fish into the instance variable food.
   def eat(fish)
-    food << fish
+    @food << fish
   end
 
   # STEP 6: SHARKS ARE HUNGRY!!! Define a method called binge_eat, that takes in an array
@@ -43,7 +44,6 @@ class Shark <  Fish
   # to all elements in the array to make sure your shark eats all the food!
 
   def binge_eat(lots_of_food)
-    do
       lots_of_food.each do |item|
         self.eat(item)
     end
@@ -57,7 +57,7 @@ end
 # STEP 7: Let's instantiate some fish!!! Create an instance of fish in the variable "nemo", who is orange, 
 # named Nemo, and swims 10 km/hr. Call "get_speed" on your new instance and puts the return value.
 nemo = Fish.new("orange","Nemo",10)
-nemo.get_speed
+nemo.gets_speed
 #Return value: "This fish is kinda slow."
 
 # STEP 8: MORE FISH! Create 2 more instances of different types of fish, and save them to 
@@ -80,4 +80,3 @@ bruce.binge_eat([nemo,pedro,clown])
 # STEP 11: Bruce is happy. Call what_i_ate to see what he ate.
 
 bruce.what_i_ate
-
