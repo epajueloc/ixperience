@@ -1,0 +1,32 @@
+body	{
+	text-align: center;
+	background: rgb(204,229,255);
+	background-size: cover;	
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1	{
+	font-size: 56px;
+	color: black;
+	font-family: 'Chewy', cursive;
+}
+
+
+h3	{
+	font-size: 24px;
+	color: purple;
+}
+}
+
+p	{
+	font-size: 18px;
+	color: white;
+}
+
+img	{
+	height:450px;
+	margin: 40px;
+}
+
+
+
