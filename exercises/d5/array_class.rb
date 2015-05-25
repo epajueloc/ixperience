@@ -1,19 +1,23 @@
 class Array
-
-def naturals
-n = gets.to_i
+def initialize(array)
+	@array = array
+end
+def naturals (n)
+n = n.to_i
 i=0
 while i<=n.length
-array << i
+@array << i
 end
-puts array
-end
-
-def increment
-	array.map{|n| n+1}
+prints @array
 end
 
-def increment_by_n
-	array.map{|n| self.increment * n} #how do I call this method?
+def increment (n)
+	@array.map{|n| n+1}
+end
+
+def increment_by_n (n)
+	@array.map{|n| self.increment * n}
 end
 end
+
+array = Array.new([])
