@@ -37,7 +37,7 @@ end
 # Q5
 
 def more_fun(array)
-	array.index_at(0) = "FUN FUN"
+	array[0] = "FUN FUN"
 end
 
 # Q6
@@ -76,7 +76,7 @@ class Insect
     @age_in_days = age_in_days
   end
   def age_in_year()
-  	age_in_year = (@age_in_days)/365
+  	@aeg_in_year.to_f/365
   end 
 end
 
@@ -87,12 +87,12 @@ class Person
 		@age = age
 	end
 
-	def age=()
+	def age=(age)
 		@age = age
 	end
 
 	def age_returns ()
-		prints @age
+		@age
 	end
 end
 

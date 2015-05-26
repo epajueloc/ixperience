@@ -45,7 +45,7 @@ class Shark <  Fish
 
   def binge_eat(lots_of_food)
       lots_of_food.each do |item|
-        self.eat(item)
+        eat(item)
     end
   end
 
@@ -57,7 +57,7 @@ end
 # STEP 7: Let's instantiate some fish!!! Create an instance of fish in the variable "nemo", who is orange, 
 # named Nemo, and swims 10 km/hr. Call "get_speed" on your new instance and puts the return value.
 nemo = Fish.new("orange","Nemo",10)
-nemo.gets_speed
+puts nemo.gets_speed
 #Return value: "This fish is kinda slow."
 
 # STEP 8: MORE FISH! Create 2 more instances of different types of fish, and save them to 
